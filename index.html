@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surpresa!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Correção de a11y aplicada no alt -->
+    <img src="assets/indexBackground.jpeg" alt="" class="background" />
+
+    <main id="app-container">
+      <section id="welcome-screen" class="screen active">
+        <h1 id="main-question">Você está pronta para ver seu presente?</h1>
+
+        <div class="button-group">
+          <button id="btn-yes" class="btn btn-primary">Óbvio que sim!</button>
+          <button id="btn-no" class="btn btn-secondary">Não</button>
+        </div>
+      </section>
+
+      <section id="gift-screen" class="screen hidden">
+        <header class="gift-header">
+          <h2 id="gift-title">Feliz Aniversário, RAFAAAAAAA! 🎉</h2>
+          <button id="btn-music-toggle" class="btn btn-secondary">
+            <span id="music-icon">🎵</span> Tocar Música
+          </button>
+        </header>
+
+        <article class="gift-body">
+          <p id="message-container"></p>
+          
+          <!-- Novo Node de Imagem: Nasce oculto pelo CSS e aguarda o controlador JS -->
+          <img id="surprise-meme" src="assets/meme.jpg" class="meme-img hidden" alt="Meme surpresa do cachorro" />
+        </article>
+
+        <footer class="gift-footer">
+          <p class="signature">Com carinho, Matheus.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
